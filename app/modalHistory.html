@@ -1,0 +1,36 @@
+<div class="modal fade" id="modalHistory" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">            
+            <div class="modal-header">
+                <h4 class="modal-title">History</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table id="modalhistory" class="responstable" data-id-table="advancedTable" data-pagination="true" data-search-align="left" data-show-columns="true">
+                    <thead>
+                        <tr>
+                            <th>Editor</th>
+                            <th>Date Edited</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modalHistoryBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalHistoryEmpty" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">            
+            <div class="modal-header">
+                <h4 class="modal-title">History</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>No one has modified this entry yet.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,270 @@
+<!-- Add New -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Add Asset </h4>
+			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&#xD7;</button>
+		  	</div>
+            <div class="modal-body">
+				<div class="container-fluid">
+				<form method='post' action='' enctype="multipart/form-data">
+					<input type="hidden" class="id" name="id">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label class="control-label">Location:</label>
+							<input type="text" class="form-control" name="location" id="location">
+						</div>
+						
+						<div class="form-group col-md-6">
+							<label class="control-label">Assignee:</label>
+							<input type="text" class="form-control" name="assignee" id="assignee">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label">Description:</label>
+							<input type="text" class="form-control" name="description" id="description">
+						</div>
+									
+						<div class="form-group col-md-6">
+							<label class="control-label">Make:</label>
+							<input type="text" class="form-control" name="make" id="make">
+						</div>				
+					
+						<div class="form-group col-md-6">
+							<label class="control-label"> Model:</label>
+							<input type="text" class="form-control" name="model" id="model">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label">SerialNo:</label>
+							<input type="text" class="form-control" name="serialNo" id="serialNo">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label">CountyNo:</label>
+							<input type="text" class="form-control" name="countyNo" id="countyNo">
+						</div>
+
+						<div class="form-group col-md-6">
+							<label class="control-label">Cost:</label>
+							<input type="text" class="form-control" name="cost" id="cost">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label class="control-label">Comments:</label>
+							<input type="text" class="form-control" name="comments" id="comments">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label">Status:</label>
+							<input type="text" class="form-control" name="status" id="status">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label"> Category:</label>
+							<input type="text" class="form-control" name="category" id="category">
+						</div>
+				
+						<div class="form-group col-md-6">
+							<label class="control-label">BinventUnitCode:</label>
+							<input type="text" class="form-control" name="binvent" id="binvent">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label">Sublocation:</label>
+							<input type="text" class="form-control" name="sublocation" id="sublocation">
+						</div>
+					
+						<div class="form-group col-md-6">
+							<label class="control-label"> Bureau:</label>
+							<input type="text" class="form-control" name="bureau" id="bureau">
+						</div>
+
+						<div class="form-group col-md-6">
+							<label class="control-label"> Select Image:</label>
+							<input type='file' name='file' id='file'>
+						</div>
+
+
+					</div>
+            	</div> 
+			</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+               <input type='button' class='btn btn-info' value='Upload' id='upload'>
+			</form>
+			<div id='preview'></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+	            <h4 class="modal-title w-100 font-weight-bold">Edit Asset</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&#xD7;</button>
+		  	</div>
+			<div class="modal-body">
+			<div class="container-fluid">
+			<form form method="post" action='' id="editForm" enctype="multipart/form-data">
+				<input type="hidden" class="id" name="id">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label class="control-label">Location:</label>
+						<input type="text" class="form-control location" name="location" id="location">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label">Assignee:</label>
+						<input type="text" class="form-control assignee" name="assignee" id="assignee">
+					</div>
+			
+					<div class="form-group col-md-6">
+						<label class="control-label">Description:</label>
+						<input type="text" class="form-control description" name="description" id="description">
+					</div>
+								
+					<div class="form-group col-md-6">
+						<label class="control-label">Make:</label>
+						<input type="text" class="form-control make" name="make" id="make">
+					</div>				
+				
+					<div class="form-group col-md-6">
+						<label class="control-label"> Model:</label>
+						<input type="text" class="form-control model" name="model" id="model">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label">SerialNo:</label>
+						<input type="text" class="form-control serialNo" name="serialNo" id="serialNo">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label">CountyNo:</label>
+						<input type="text" class="form-control countyNo" name="countyNo" id="countyNo">
+					</div>
+					
+					<div class="form-group col-md-6">
+						<label class="control-label">Cost:</label>
+						<input type="text" class="form-control cost" name="cost" id="cost">
+					</div>
+				</div>
+
+				<div class="form-row">				
+					 <div class="form-group col-md-6">
+						<label class="control-label">Comments:</label>
+						<input type="text" class="form-control comments" name="comments" id="comments">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label">Status:</label>
+						<input type="text" class="form-control status" name="status" id="status">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label"> Category:</label>
+						<input type="text" class="form-control category" name="category" id="category">
+					</div>
+			
+			       <div class="form-group col-md-6">
+						<label class="control-label">BinventUnitCode:</label>
+						<input type="text" class="form-control binvent" name="binvent" id="binvent">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label">Sublocation:</label>
+						<input type="text" class="form-control sublocation" name="sublocation" id="sublocation">
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label class="control-label"> Bureau:</label>
+						<input type="text" class="form-control bureau" name="bureau" id="bureau">
+					</div>
+
+					<div class="form-group col-md-6">
+						<label class="control-label"> Select Image:</label>
+						<input type="file" name="file" id="file"/>
+							<span id="vehicle_image"></span>
+					</div>
+			</div>
+           	</div> 
+			</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-success">Update</button>
+			</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<center><h4 class="modal-title" id="myModalLabel">Salvage Asset</h4></center>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">	
+            	<p class="text-center">Do you want to mark asset as salvage?</p>			
+				<form id="salvageForm">
+				<input type="hidden" class="id" name="id">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-danger">Yes</button>
+			</form>
+			</div>
+        </div>
+    </div>
+</div>
+
+<!-- Restore -->
+<div class="modal fade" id="restore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<center><h4 class="modal-title" id="myModalLabel">Restore Asset</h4></center>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">	
+            	<p class="text-center">Do you want to restore asset?</p>			
+				<form id="restoreForm">
+				<input type="hidden" class="id" name="id">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-danger">Yes</button>
+			</form>
+			</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
